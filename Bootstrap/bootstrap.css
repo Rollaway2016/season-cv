@@ -1,0 +1,93 @@
+body {
+	padding-top: 50px;
+	background-color: #555;
+}
+/*Caeousel*/
+.carousel {
+	margin-bottom: 50px;
+}
+.navbar-brand {
+	text-transform: uppercase;
+}
+.carousel-indicators {
+	bottom:0;
+}
+.carousel-inner .item img {
+	width: 100%;
+}
+.carousel-control {
+	padding-top: 10%;
+	font-size: 72px;
+}
+
+/*Columns*/
+.overview {
+	width:100%;
+	color: #ddd;
+	margin-bottom: 50px;
+}
+.overview img {
+	width: 100%;
+}
+.column-stretch {
+	min-height: 300px;
+}
+.overview .firefox {
+	background-color: #3e454c;
+}
+.overview .chrome {
+	background-color: #343839;
+}
+.overview .opera {
+	background-color: #252525;
+}
+.overview .intro {
+	padding: 0 10% 10%;
+}
+
+/*Navtabs*/
+.my-nav-tabs {
+	padding-bottom: 50px;
+}
+.nav-tabs a {
+	font-size: 18px;
+	color: #fff;
+}
+.nav-tabs a:hover {
+ 	color: #000;
+}
+.tab-pane {
+	width: 100%;
+	height: 350px;
+	color: #fff;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+.firefox-tab {
+	background-image: url(image/firefox.png);
+	background-color: #3e454c;
+	background-position: 180px -10px;
+}
+.chrome-tab {
+	background-image: url(image/chrome.png);
+	background-color: #343839;
+	background-position: 0 -20px;
+}
+.opera-tab {
+	background-image: url(image/opera.png);
+	background-color: #252525;
+	background-position: 200px;
+}
+.tab-text {
+	padding: 50px;
+	max-width: 400px;
+}
+/*Footer*/
+footer {
+	margin-top: 50px;
+	padding-top: 50px;
+	height: 200px;
+	background-color: #3b3b3b;
+	color: #ddd;
+	text-align: center;
+}
