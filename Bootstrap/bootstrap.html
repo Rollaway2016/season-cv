@@ -29,7 +29,7 @@
 			<!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
 			<div class="collapse navbar-collapse navbar-responsive-collapse" id="">
 				<ul class="nav navbar-nav">
-					<li class="dropdown active">
+					<li class="dropdown">
 						<a class="dropdown-toggle" href="##" data-toggle="dropdown">INTRODUCTION <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="#firefox-tab">Firefox</a></li>
@@ -37,8 +37,7 @@
 							<li><a href="#opera-tab">Opera</a></li>
 						</ul>
 					</li>
-					<li><a href="##">QQ</a></li>
-					<li><a href="##">MOBILE</a></li>
+					<li><a href="##">CONTACT</a></li>
 				</ul>
 			</div>			  
 		</div>
@@ -136,7 +135,7 @@
 				var tab=$(".nav-tabs a[href='" + href + "']")
 				tab.tab("show");
 				e.preventDefault();
-    			$(document).scrollTop($(href).offset().top - 120);
+    			$(document).scrollTop($(href).offset().top - 200);
 			})
 		})
 	</script>
