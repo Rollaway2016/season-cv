@@ -10,7 +10,7 @@ body {
 	text-transform: uppercase;
 }
 .carousel-indicators {
-	bottom:0;
+	bottom: 0;
 }
 .carousel-inner .item img {
 	width: 100%;
@@ -83,9 +83,71 @@ body {
 /*Footer*/
 footer {
 	margin-top: 50px;
-	padding-top: 100px;
-	height: 200px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	background-color: #3b3b3b;
-	color: #ddd;
-	text-align: center;
+	color: #888;
+}
+footer a {
+	color: #888;
+	display: block;
+}
+footer a:hover, footer a:active {
+	text-decoration: none;
+	color: #eee;
+}
+footer a:hover .email, footer a:hover .mobile {
+	visibility: visible;
+}
+footer a:hover .caret-left {
+	border-right: 12px solid #eee;	
+}
+footer .email, footer .mobile{
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	padding: 10px;
+	height: 42px;
+	border-radius: 10px;
+	font-size: 16px;
+	background-color: #eee;
+	color: #000;
+	visibility: hidden;
+}
+footer .caret-left{
+	position: absolute;
+	width: 0;    
+    height: 0;
+    margin-left: -32px;
+    border-top: 12px solid transparent;
+    border-right: 12px solid #3b3b3b;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid transparent;
+    font-size: 0;
+    line-height: 0;
+}
+footer .copyright {
+	text-align: right;
+}
+/*Font Icon*/
+@font-face {
+	font-family: "Glyphicons Halflings";
+	src: url("fonts/glyphicons.eot?");		/*IE9兼容模式*/
+	src: url("fonts/glyphicons.eot?#iefix") format("embedded-opentype"),
+		url("fonts/glyphicons.woff") format("woff"),
+		url("fonts/glyphicons.ttf") format("truetype"),
+		url("fonts/glyphicons.svg#glyphicons_halflingsregular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  -moz-osx-font-smoothing: grayscale;
 }

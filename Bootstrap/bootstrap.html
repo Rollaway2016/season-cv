@@ -30,14 +30,14 @@
 			<div class="collapse navbar-collapse navbar-responsive-collapse" id="">
 				<ul class="nav navbar-nav">
 					<li class="dropdown">
-						<a class="dropdown-toggle" href="##" data-toggle="dropdown">INTRODUCTION <span class="caret"></span></a>
+						<a class="dropdown-toggle" href="javascript:;" data-toggle="dropdown">INTRODUCTION <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
 							<li><a href="#firefox-tab">Firefox</a></li>
 							<li><a href="#chrome-tab">Chrome</a></li>
 							<li><a href="#opera-tab">Opera</a></li>
 						</ul>
 					</li>
-					<li><a href="##">CONTACT</a></li>
+					<li><a href="#contact">CONTACT</a></li>
 				</ul>
 			</div>			  
 		</div>
@@ -123,18 +123,38 @@
 		</div>
 	</div>
 	<footer>
-		<p>&copy; All Rights Reserved 2016</p>
-		<p>Designed with Bootstrap by Season</p>
+		<div class="container">
+			<div class="row">
+				<div class="contact" id="contact">
+					<a class="col-md-4" href="javascript:;" title="email">
+						<span class="glyphicon glyphicon-envelope"></span>
+						<span class="email">
+							<span class="caret-left"></span>Email: 253640268@qq.com
+						</span>
+					</a>
+					<a class="col-md-4" href="javascript:;" title="mobile">
+						<span class="glyphicon glyphicon-phone"></span>
+						<span class="mobile">
+							<span class="caret-left"></span>Mobile: 15921508460
+						</span>
+					</a>
+					<div class="copyright col-md-4">
+						<p>&copy; All Rights Reserved 2016</p>
+						<p>Designed with Bootstrap by Season</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
 	<script src="jquery.min.js"></script>
 	<script src="bootstrap.min.js"></script>
 	<script>
 		$(document).ready(function () {
 			$(".dropdown-menu a").click(function (e) {
+				e.preventDefault();
 				var href=$(this).attr("href");
 				var tab=$(".nav-tabs a[href='" + href + "']")
 				tab.tab("show");
-				e.preventDefault();
     			$(document).scrollTop($(href).offset().top - 200);
 			})
 		})
