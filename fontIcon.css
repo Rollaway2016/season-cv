@@ -1,4 +1,44 @@
-﻿@font-face {
+﻿/*移动端*/
+@media screen and (max-width: 480px) {
+    body {
+        background-color:#333;
+    }
+    .icongroup {
+    	width: 360px;
+    }
+	.null {
+		display: none;
+	}
+	#cube {
+		top: 560px;
+		left: 33%;
+	}
+	footer {
+		margin-top: 220px;
+	}
+}
+/*桌面*/
+@media screen and (min-width: 480px) {
+    .icongroup {
+    	width: 500px;
+    	margin: 0 auto;
+    }
+    .null {
+    	height: 120px;
+    	width: 120px;
+    	display: block;
+    	float: left;
+    }
+    #cube {
+    	top: 200px;
+    	left: 180px;
+    }
+    footer {
+    	margin-top: 30px;
+    }
+}
+
+@font-face {
 	font-family: "icomoon";
 	src: url("fonts/icomoon.eot?");		/*IE9j兼容模式*/
 	src: url("fonts/icomoon.eot?") format("embedded-opentype")
@@ -9,22 +49,10 @@
 	font-style: normal;
 }
 
-.icongroup {
-	margin: 0 auto;
-	width: 500px;
-}
-
 .clearfix {
 	content: " ";
 	display: table;
 	clear: both;
-}
-
-.null {
-	height: 120px;
-	width: 120px;
-	display: block;
-	float: left;
 }
 
 .icomoon-logo {
@@ -169,8 +197,6 @@
 }
 
 #cube {
-	top: 200px;
-	left: 180px;
 	position: relative;
 	-webkit-transform-style:preserve-3d;
 	-webkit-transform-origin: 50px 50px;
@@ -211,7 +237,6 @@
 
 /*Footer*/
 footer {
-	margin-top: 30px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	background-color: #3b3b3b;
