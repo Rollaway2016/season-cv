@@ -1,4 +1,4 @@
-﻿/*移动端*/
+/*移动端*/
 @media screen and (max-width: 480px) {
     body {
         background-color:#333;
@@ -52,7 +52,7 @@
 }
 
 body {
-	margin-top: 80px;
+	margin-top: 70px;
 }
 
 .clearfix {
