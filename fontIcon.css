@@ -12,7 +12,7 @@
 .icongroup {
 	margin: 0 auto;
 	width: 500px;
-	display: none;
+	overflow: hidden;
 }
 
 .clearfix {
