@@ -16,9 +16,6 @@
 	footer {
 		margin-top: 220px;
 	}
-	.row {
-		padding: 0 !important;
-	}
 }
 /*桌面*/
 @media screen and (min-width: 480px) {
