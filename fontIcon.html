@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Font Icon Demo</title>
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="fontIcon.css" />
+</head>
+<body>
+	<header class="navbar navbar-default navbar-inverse" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand"><span class="icomoon-logo icon-delicious"></span>ICOMOON</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-responsive-collapse" id="">
+				<ul class="nav navbar-nav">
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</div>			  
+		</div>
+	</header>
+	<div class="icongroup clearfix container">
+		<div class="row">
+				<!-- 使用HTML实体方式，兼容性高 -->
+				<div class="icomoon"><span class="rotateZ">&#xe994;</span></div>
+				<div class="icomoon"><span class="rotateZ">&#xe97a;</span></div>
+				<div class="icomoon"><span class="rotateZ">&#xe97c;</span></div>
+				<div class="icomoon"><span class="rotateZ">&#xea0f;</span></div>
+				<div class="icomoon"><span class="scale">&#xe902;</span></div>
+				<div class="null"></div>
+				<div class="null"></div>
+				<div class="icomoon"><span class="scale">&#xe950;</span></div>
+				<!-- 使用CSS方式，不兼容IE低版本 -->
+				<div class="icomoon"><span class="icon-camera rotateX"></span></div>
+				<div class="null"></div>
+				<div class="null"></div>
+				<div class="icomoon"><span class="icon-mobile rotateX"></span></div>
+				<div class="icomoon"><span class="icon-github rotateY"></span></div>
+				<div class="icomoon"><span class="icon-android rotateY"></span></div>
+				<div class="icomoon"><span class="icon-book rotateY"></span></div>
+				<div class="icomoon"><span class="icon-profile rotateY"></span></div>
+				<div id="experiment">
+					<div id="cube">
+						<div class="page" id="page6"><div class="icomoon"><span class="icon-delicious"></span></div></div>
+						<div class="page" id="page5"><div class="icomoon"><span class="icon-delicious"></span></div></div>
+						<div class="page" id="page4"><div class="icomoon"><span class="icon-delicious"></span></div></div>
+						<div class="page" id="page3"><div class="icomoon"><span class="icon-delicious"></span></div></div>
+						<div class="page" id="page2"><div class="icomoon"><span class="icon-delicious"></span></div></div>
+						<div class="page" id="page1"><div class="icomoon"><span class="icon-delicious"></span></div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 使用HTML实体方式，兼容性高 -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="contact" id="contact">
+					<a class="col-md-4" href="javascript:;" title="email">
+						<span class="glyphicon glyphicon-envelope"></span>
+						<span class="email">
+							<span class="caret-left"></span>Email: 253640268@qq.com
+						</span>
+					</a>
+					<a class="col-md-4" href="javascript:;" title="mobile">
+						<span class="glyphicon glyphicon-phone"></span>
+						<span class="mobile">
+							<span class="caret-left"></span>Mobile: 15921508460
+						</span>
+					</a>
+					<div class="copyright col-md-4">
+						<p>&copy; All Rights Reserved 2016</p>
+						<p>Designed with Bootstrap by Season</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var cube=$("#cube"), z=0, t;
+			function rotate () {
+				z=z+10;
+				cube.css("-webkit-transform", "rotateZ("+z+"deg)");
+			}
+			cube.hover(function () {
+				t=setInterval(rotate,100);
+			}, function () {
+				clearInterval(t);
+			})
+		})
+	</script>
+</body>
+</html>

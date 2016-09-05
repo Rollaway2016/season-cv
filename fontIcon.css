@@ -1,0 +1,275 @@
+@font-face {
+	font-family: "icomoon";
+	src: url("fonts/icomoon.eot?");		/*IE9j兼容模式*/
+	src: url("fonts/icomoon.eot?") format("embedded-opentype")
+		,url("fonts/icomoon.woff") format("woff")
+		,url("fonts/icomoon.ttf") format("truetype")
+		,url("fonts/icomoon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icongroup {
+	margin: 0 auto;
+	width: 500px;
+}
+
+.clearfix {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.null {
+	height: 120px;
+	width: 120px;
+	display: block;
+	float: left;
+}
+
+.icomoon-logo {
+	float: left;
+	margin-right: 10px;
+	font-family: "icomoon";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 36px;
+	text-align: center;
+	color: #ccc;
+	-webkit-font-smoothing: antialiased;	/*字体抗锯齿*/
+	-moz-osx-font-smoothing: grayscale;		/*字体抗锯齿*/
+}
+
+.icomoon-logo:hover {
+	color: #fff;
+}
+
+.icomoon {
+	display: block;
+	float: left;
+	height: 100px;
+	width: 100px;
+	margin: 10px;
+	font-family: "icomoon";
+	font-weight: normal;
+	font-style: normal;
+	line-height: 100px;
+	font-size: 72px;
+	text-align: center;
+	color: #555;
+	background-color: #ccc;
+	-webkit-font-smoothing: antialiased;	/*字体抗锯齿*/
+	-moz-osx-font-smoothing: grayscale;		/*字体抗锯齿*/
+}
+
+.icomoon:hover {
+	background-color: #fff;
+}
+
+.icomoon:hover .scale {
+	-webkit-animation: scale 1s infinite linear;
+	-moz-animation: scale 1s infinite linear;
+	animation: scale 1s infinite linear;
+}
+@-webkit-keyframes scale {
+	50% {
+		font-size: 100px;
+	}
+	100% {
+		font-size: 72px;
+	}
+}
+
+.icomoon:hover .rotateZ {
+	-webkit-animation: rotateZ 2s infinite linear;
+	-moz-animation: rotateZ 2s infinite linear;
+	animation: rotateZ 2s infinite linear;
+}
+@-webkit-keyframes rotateZ {
+	100% {
+		-webkit-transform；rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.icomoon:hover .rotateX {
+	-webkit-animation: rotateX 2s infinite linear;
+	animation: rotateX 2s infinite linear;
+}
+@-webkit-keyframes rotateX {
+	100% {
+		-webkit-transform；rotateX(360deg);
+		transform: rotateX(360deg);
+	}
+}
+
+.icomoon:hover .rotateY {
+	-webkit-animation: rotateY 2s infinite linear;
+	animation: rotateY 2s infinite linear;
+}
+@-webkit-keyframes rotateY {
+	100% {
+		-webkit-transform；rotateY(360deg);
+		transform: rotateY(360deg);
+	}
+}
+
+/*从icomoon下载的style.css引入字体图标索引*/
+.icon-camera:before {
+    content: "\e90f";
+}
+.icon-pacman:before {
+    content: "\e916";
+}
+.icon-book:before {
+    content: "\e91f";
+}
+.icon-profile:before {
+    content: "\e923";
+}
+.icon-phone:before {
+    content: "\e942";
+}
+.icon-envelop:before {
+    content: "\e945";
+}
+.icon-mobile:before {
+    content: "\e958";
+}
+.icon-bubbles:before {
+    content: "\e96c";
+}
+.icon-user:before {
+    content: "\e971";
+}
+.icon-spinner:before {
+    content: "\e97a";
+}
+.icon-spinner3:before {
+    content: "\e97c";
+}
+.icon-spinner9:before {
+    content: "\e982";
+}
+.icon-cog:before {
+    content: "\e994";
+}
+.icon-cross:before {
+    content: "\ea0f";
+}
+.icon-github:before {
+    content: "\eab0";
+}
+.icon-android:before {
+    content: "\eac0";
+}
+.icon-delicious:before {
+	content: "\eacd";
+}
+/*3D正方体*/
+#experiment {
+	-webkit-perspective: 1000;
+	-webkit-perspective-origin: 100% 100%;
+}
+
+#cube {
+	top: 200px;
+	left: 180px;
+	position: relative;
+	-webkit-transform-style:preserve-3d;
+	-webkit-transform-origin: 50px 50px;
+}
+
+.page {
+	position: absolute;
+	-webkit-transition: -webkit-transform 1s linear;
+}
+.page .icomoon {
+	margin: 0;
+	font-size: 100px;
+	background-color: #fff;
+}
+
+#page6 {
+	-webkit-transform-origin: right;
+	-webkit-transform: rotateY(-90deg);
+}
+#page5 {
+	-webkit-transform-origin: left;
+	-webkit-transform: rotateY(90deg);
+}
+
+#page4 {
+	-webkit-transform-origin: top;
+	-webkit-transform: rotateX(-90deg);
+}
+
+#page3{
+	-webkit-transform: translateZ(-100px)
+}
+
+#page2 {
+	-webkit-transform-origin: bottom;
+	-webkit-transform: rotateX(90deg);
+}
+
+/*Footer*/
+footer {
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #3b3b3b;
+	color: #888;
+}
+footer a {
+	color: #888;
+	display: block;
+}
+footer a:hover, footer a:active {
+	text-decoration: none;
+	color: #eee;
+}
+footer a:hover .email, footer a:hover .mobile {
+	visibility: visible;
+}
+footer a:hover .caret-left {
+	border-right: 12px solid #eee;	
+}
+footer .email, footer .mobile{
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	padding: 10px;
+	height: 42px;
+	border-radius: 10px;
+	font-size: 16px;
+	background-color: #eee;
+	color: #000;
+	visibility: hidden;
+}
+footer .caret-left{
+	position: absolute;
+	width: 0;    
+    height: 0;
+    margin-left: -32px;
+    border-top: 12px solid transparent;
+    border-right: 12px solid #3b3b3b;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid transparent;
+    font-size: 0;
+    line-height: 0;
+}
+footer .copyright {
+	text-align: right;
+}
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  -moz-osx-font-smoothing: grayscale;
+}
