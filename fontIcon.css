@@ -38,6 +38,8 @@
     }
 }
 
+
+/*移动和桌面均适用*/
 @font-face {
 	font-family: "icomoon";
 	src: url("fonts/icomoon.eot?");		/*IE9j兼容模式*/
@@ -47,6 +49,10 @@
 		,url("fonts/icomoon.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;
+}
+
+body {
+	margin-top: 80px;
 }
 
 .clearfix {
