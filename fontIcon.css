@@ -9,13 +9,9 @@
 	font-style: normal;
 }
 
-body {
-	padding-top: 70px;
-}
-
 .icongroup {
 	margin: 0 auto;
-	width: 328px;
+	width: 500px;
 }
 
 .clearfix {
@@ -25,8 +21,8 @@ body {
 }
 
 .null {
-	height: 82px;
-	width: 82px;
+	height: 120px;
+	width: 120px;
 	display: block;
 	float: left;
 }
@@ -47,14 +43,14 @@ body {
 .icomoon {
 	display: block;
 	float: left;
-	height: 72px;
-	width: 72px;
-	margin: 5px;
+	height: 100px;
+	width: 100px;
+	margin: 10px;
 	font-family: "icomoon";
 	font-weight: normal;
 	font-style: normal;
-	line-height: 72px;
-	font-size: 48px;
+	line-height: 100px;
+	font-size: 72px;
 	text-align: center;
 	color: #555;
 	background-color: #ccc;
@@ -73,10 +69,10 @@ body {
 }
 @-webkit-keyframes scale {
 	50% {
-		font-size: 72px;
+		font-size: 100px;
 	}
 	100% {
-		font-size: 48px;
+		font-size: 72px;
 	}
 }
 
@@ -173,11 +169,11 @@ body {
 }
 
 #cube {
-	top: 140px;
-	left: 120px;
+	top: 200px;
+	left: 180px;
 	position: relative;
 	-webkit-transform-style:preserve-3d;
-	-webkit-transform-origin: 36px 36px;
+	-webkit-transform-origin: 50px 50px;
 }
 
 .page {
@@ -186,7 +182,7 @@ body {
 }
 .page .icomoon {
 	margin: 0;
-	font-size: 72px;
+	font-size: 100px;
 	background-color: #fff;
 }
 
@@ -205,7 +201,7 @@ body {
 }
 
 #page3{
-	-webkit-transform: translateZ(-72px)
+	-webkit-transform: translateZ(-100px)
 }
 
 #page2 {
