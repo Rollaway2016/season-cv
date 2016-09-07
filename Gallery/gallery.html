@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="gallery.css" />
+	<title>Gallery</title>
+</head>
+<body onselectstart="return false;">
+	<div class="wrap" id="wrap">
+		<figure class="photo photo-front" id="photo{{index}}" onclick="turn(this);">
+			<div class="photo-wrap">
+				<div class="side side-front">
+					<img src="{{img}}" alt="{{caption}}" />
+					<figcaption>{{caption}}</figcaption>
+				</div>
+				<div class="side side-back">
+						<p class="desc">{{desc}}</p>
+				</div>
+			</div>
+		</figure>
+	</div>
+	<script src="gallery.js"></script>
+</body>
+</html>
