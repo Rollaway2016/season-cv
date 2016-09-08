@@ -3,8 +3,9 @@
     body {
         background-color:#333;
     }
-    .icongroup {
+	.icongroup {
     	width: 360px;
+    	margin: 0 auto;
     }
 	.null {
 		display: none;
@@ -19,6 +20,9 @@
 }
 /*桌面*/
 @media screen and (min-width: 480px) {
+    .container {
+
+    }
     .icongroup {
     	width: 500px;
     	margin: 0 auto;
@@ -244,7 +248,6 @@ body {
 /*Footer*/
 footer {
 	padding-top: 30px;
-	padding-bottom: 30px;
 	background-color: #3b3b3b;
 	color: #888;
 }
