@@ -18,7 +18,7 @@
 		margin-top: 220px;
 	}
 }
-/*移动端*/
+/*移动端普通屏幕*/
 @media screen and (max-width: 480px) and (min-width: 360px) {
     body {
         background-color:#333;
@@ -142,28 +142,33 @@ body {
 @-webkit-keyframes rotateZ {
 	100% {
 		-webkit-transform；rotate(360deg);
+		-moz-transform；rotate(360deg);
 		transform: rotate(360deg);
 	}
 }
 
 .icomoon:hover .rotateX {
 	-webkit-animation: rotateX 2s infinite linear;
+	-moz-animation: rotateX 2s infinite linear;
 	animation: rotateX 2s infinite linear;
 }
 @-webkit-keyframes rotateX {
 	100% {
 		-webkit-transform；rotateX(360deg);
+		-moz-transform；rotateX(360deg);
 		transform: rotateX(360deg);
 	}
 }
 
 .icomoon:hover .rotateY {
 	-webkit-animation: rotateY 2s infinite linear;
+	-moz-animation: rotateY 2s infinite linear;
 	animation: rotateY 2s infinite linear;
 }
 @-webkit-keyframes rotateY {
 	100% {
 		-webkit-transform；rotateY(360deg);
+		-moz-transform；rotateY(360deg);
 		transform: rotateY(360deg);
 	}
 }
@@ -223,18 +228,28 @@ body {
 /*3D正方体*/
 #experiment {
 	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	perspective: 1000;
 	-webkit-perspective-origin: 100% 100%;
+	-moz-perspective-origin: 100% 100%;
+	perspective-origin: 100% 100%;
 }
 
 #cube {
 	position: relative;
 	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	transform-style:preserve-3d;
 	-webkit-transform-origin: 50px 50px;
+	-moz-transform-origin: 50px 50px;
+	transform-origin: 50px 50px;
 }
 
 .page {
 	position: absolute;
 	-webkit-transition: -webkit-transform 1s linear;
+	-moz-transition: -webkit-transform 1s linear;
+	transition: -webkit-transform 1s linear;
 }
 .page .icomoon {
 	margin: 0;
@@ -244,25 +259,43 @@ body {
 
 #page6 {
 	-webkit-transform-origin: right;
+	-moz-transform-origin: right;
+	transform-origin: right;
 	-webkit-transform: rotateY(-90deg);
+	-moz-transform: rotateY(-90deg);
+	transform: rotateY(-90deg);
 }
 #page5 {
 	-webkit-transform-origin: left;
+	-moz-transform-origin: left;
+	transform-origin: left;
 	-webkit-transform: rotateY(90deg);
+	-moz-transform: rotateY(90deg);
+	transform: rotateY(90deg);
 }
 
 #page4 {
 	-webkit-transform-origin: top;
+	-moz-transform-origin: top;
+	transform-origin: top;
 	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
 }
 
 #page3{
-	-webkit-transform: translateZ(-100px)
+	-webkit-transform: translateZ(-100px);
+	-moz-transform: translateZ(-100px);
+	transform: translateZ(-100px);
 }
 
 #page2 {
 	-webkit-transform-origin: bottom;
+	-moz-transform-origin: bottom;
+	transform-origin: bottom;
 	-webkit-transform: rotateX(90deg);
+	-moz-transform: rotateX(90deg);
+	transform: rotateX(90deg);
 }
 
 /*Footer*/
@@ -329,9 +362,9 @@ footer .copyright {
   top: 1px;
   display: inline-block;
   font-family: "Glyphicons Halflings";
-  -webkit-font-smoothing: antialiased;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
