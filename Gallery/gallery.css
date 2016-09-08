@@ -79,7 +79,7 @@ body {
 	z-index: 2;
 	margin-top: -110px;
 	margin-left: -75px;
-	-webkit-transform: scale(2);
+	-webkit-transform: scale(1.5);
 }
 
 /*图片3D翻转*/
