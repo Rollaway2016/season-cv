@@ -20,7 +20,7 @@ function addPhotos() {
 
 // 排列图片
 function rsort(n) {
-	// 删除所有center,front,back样式
+	// 删除所有center,back,left,right,transform样式
 	var photos = [];
 	var _photo = document.getElementsByClassName('photo');
 	for (var s = 0, l = _photo.length; s < l; s++) {
