@@ -1,5 +1,25 @@
+/*移动端窄屏*/
+@media screen and (max-width: 360px) {
+	body {
+        background-color:#333;
+    }
+	.icongroup {
+    	width: 240px;
+    	margin: 0 auto;
+    }
+	.null {
+		display: none;
+	}
+	#cube {
+		top: 820px;
+		left: 33%;
+	}
+	footer {
+		margin-top: 220px;
+	}
+}
 /*移动端*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 360px) {
     body {
         background-color:#333;
     }

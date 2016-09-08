@@ -2,7 +2,9 @@ body {
 	padding-top: 50px;
 	background-color: #555;
 }
-
+.glyphicon.focus {
+	font-size: 14px;
+}
 .boot-logo {
 	float: left;
 	padding-right: 10px;
