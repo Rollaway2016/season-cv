@@ -15,23 +15,26 @@ function addPhotos() {
 		html.push(_html);
 	}
 	wrap.innerHTML = html.join('');
-
 	rsort(randomInt(0,data.length-1));
 }
 
 // 排列图片
 function rsort(n) {
-	// 删除所有center样式
+	// 删除所有center,front,back样式
 	var photos = [];
 	var _photo = document.getElementsByClassName('photo');
 	for (var s = 0, l = _photo.length; s < l; s++) {
 		_photo[s].className = _photo[s].className.replace(/\s?photo-center/, '');
+		_photo[s].className = _photo[s].className.replace(/\s?photo-back/, '');
+		_photo[s].style.left = '';
+		_photo[s].style.top= '';
+		_photo[s].style.webkitTransform = '';
 		photos.push(_photo[s]);
 	}
 	// 当前选中添加center样式
 	var photoCenter = document.getElementById('photo'+n);
 	photoCenter.className += ' photo-center';
-	// 删除当前center图片
+	// 数组中删除当前center图片
 	photos.splice(n, 1);
 	//左右分布排序
 	var photosLeft = photos.splice(0, Math.floor(photos.length / 2));
@@ -40,13 +43,13 @@ function rsort(n) {
 		var photoL = photosLeft[x];
 		photoL.style.left = randomInt(getRange().left.xmin, getRange().left.xmax) + 'px';
 		photoL.style.top = randomInt(getRange().left.ymin, getRange().left.ymax) + 'px';
-		photoL.style['webkitTransform'] = 'rotate(' + randomInt(-45, 45) + 'deg)';
+		photoL.style['webkitTransform'] = 'rotate(' + randomInt(-60, 60) + 'deg)';
 	}
 	for (var y in photosRight) {
 		var photoR = photosRight[y];
 		photoR.style.left = randomInt(getRange().right.xmin, getRange().right.xmax) + 'px';
 		photoR.style.top = randomInt(getRange().right.ymin, getRange().right.ymax) + 'px';
-		photoR.style['webkitTransform'] = 'rotate(' + randomInt(-45, 45) + 'deg)';
+		photoR.style['webkitTransform'] = 'rotate(' + randomInt(-60, 60) + 'deg)';
 	}
 }
 
@@ -71,11 +74,17 @@ function getRange() {
 	return range;
 }
 
-// 3D翻转页面
+//3D翻转页面
 function turn(ele) {
 	var cls = ele.className;
-	cls = (/photo-front/.test(cls)) ? cls.replace(/photo-front/, 'photo-back') : cls.replace(/photo-back/, 'photo-front');
-	ele.className = cls;
+	if (/photo-center/.test(cls)) {
+		cls = (/photo-front/.test(cls)) ? cls.replace(/photo-front/, 'photo-back') : cls.replace(/photo-back/, 'photo-front');
+		ele.className = cls;
+	}
+	else {
+		var n = ele.id.split('oto')[1];
+		rsort(n);
+	}
 }
 
 // 生成随机整数

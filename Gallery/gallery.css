@@ -32,14 +32,10 @@ body {
 /*图片样式*/
 .photo {
 	position: absolute;
-	/*left: 50%;
-	top: 50%;
-	margin-top: -110px;
-	margin-left: -75px;*/
 	z-index: 1;
 	width: 150px;
 	height: 220px;
-	box-shadow: 0 0 1px rgba(0 0 0 .1);
+	-webkit-transition: all 1s;
 }
 
 .photo .side {
@@ -94,6 +90,9 @@ body {
 .photo-wrap {
 	width: 100%;
 	height: 100%;
+	-webkit-box-shadow: 0 0 10px #000;
+	-moz-box-shadow: 0 0 10px #000;
+	box-shadow: 0 0 10px r#000;
 	-webkit-transform-style: preserve-3d;
 	-webkit-transition: all 1s;
 }
