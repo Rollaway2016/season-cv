@@ -43,13 +43,13 @@ function rsort(n) {
 		var photoL = photosLeft[x];
 		photoL.style.left = randomInt(getRange().left.xmin, getRange().left.xmax) + 'px';
 		photoL.style.top = randomInt(getRange().left.ymin, getRange().left.ymax) + 'px';
-		photoL.style['webkitTransform'] = 'rotate(' + randomInt(-60, 60) + 'deg)';
+		photoL.style['webkitTransform'] = 'rotate(' + randomInt(-75, 75) + 'deg)';
 	}
 	for (var y in photosRight) {
 		var photoR = photosRight[y];
 		photoR.style.left = randomInt(getRange().right.xmin, getRange().right.xmax) + 'px';
 		photoR.style.top = randomInt(getRange().right.ymin, getRange().right.ymax) + 'px';
-		photoR.style['webkitTransform'] = 'rotate(' + randomInt(-60, 60) + 'deg)';
+		photoR.style['webkitTransform'] = 'rotate(' + randomInt(-75, 75) + 'deg)';
 	}
 }
 
@@ -60,12 +60,12 @@ function getRange() {
 	var range = {
 		left: {
 			xmin: 0,
-			xmax: wrap.clientWidth / 2 - 2 * photo.clientWidth,
+			xmax: wrap.clientWidth / 2 - 1.5 * photo.clientWidth,
 			ymin: 0,
 			ymax: wrap.clientHeight - photo.clientHeight
 		},
 		right: {
-			xmin: wrap.clientWidth / 2 + photo.clientWidth,
+			xmin: wrap.clientWidth / 2 + .5 * photo.clientWidth,
 			xmax: wrap.clientWidth - photo.clientWidth,
 			ymin: 0,
 			ymax: wrap.clientHeight - photo.clientHeight
