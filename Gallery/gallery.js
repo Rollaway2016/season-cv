@@ -33,6 +33,9 @@ function rsort(n) {
 	}
 	// 当前选中添加center样式
 	var photoCenter = document.getElementById('photo'+n);
+	if (!/photo-front/.test(photoCenter.className)) {
+		photoCenter.className += ' photo-front';
+	}
 	photoCenter.className += ' photo-center';
 	// 数组中删除当前center图片
 	photos.splice(n, 1);
