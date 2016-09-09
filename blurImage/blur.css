@@ -1,0 +1,93 @@
+/*reset样式*/
+body, p, figure {
+    margin: 0;
+    padding: 0;
+}
+figure, figcaption, header, footer {
+	display: block;
+}
+body {
+	background-color: #233;
+	color: #ccc;
+	font-family: "Avenir Next", Arial, "Lantinghei SC", "Microsoft Yahei", sans-serif;
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;	/*字体抗锯齿*/
+	-moz-osx-font-smoothing: grayscale;		/*字体抗锯齿*/
+}
+
+/*页眉页脚*/
+header {
+	width: 100%;
+	line-height: 50px;
+	font-size: 36px;
+	text-align: center;
+	color: #fff;
+	background-color: #233;
+}
+footer {
+	margin-top: 100px;
+	width: 100%;
+	height:50px;
+	line-height: 1.5;
+	font-size: 14px;
+	background-color: #233;
+}
+footer .home {
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 16px;
+	line-height: 50px;
+	color: #fff;
+}
+footer .copyright {
+	line-height: 24px;
+	float: right;
+	margin-right: 20px;
+}
+
+/*图片容器*/
+.blur {
+	width: 300px;
+	height: 500px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+.blur-image {
+	position: absolute;
+	width: 100%;
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	filter: blur(10px);
+}
+.blur figcaption{
+	text-align: center;
+	font-size: 24px;
+	line-height: 72px;
+}
+/*canvas画布*/
+#canvas {
+	position: absolute;
+	z-index: 1;
+}
+/*控制按钮*/
+.button {
+	position: absolute;
+	z-index: 2;
+	bottom: -30px;
+	display: inline-block;
+	width: 100px;
+	font-size: 18px;
+	line-height: 36px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #fff;
+	color: #333;
+	-webkit-border-radius: 10px;
+	-moz--webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#show {
+	right: 0;
+}

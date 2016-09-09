@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="blur.css" />
+	<title>Gallery</title>
+</head>
+<body onselectstart="return false;">
+	<header>Blur Image</header>
+		<figure class="blur">
+			<figcaption>猜猜我是谁</figcaption>
+			<img src="../Gallery/image/妖道.jpg" alt="yaodao" class="blur-image" />
+			<canvas id="canvas"></canvas>
+			<a href="javascript:reset();" class="button" id="reset">Replay</a>
+			<a href="javascript:show();" class="button" id="show">Cheat !</a>
+		</figure>
+	<footer>
+		<a class="home" href="../bootstrap.html" title="Back to Home">BACK</a>
+		<div class="copyright">
+			<p>&copy; All Rights Reserved 2016</p>
+			<p>Built by Season &amp; Inspired by liuyubobobo</p>
+		</div>
+	</footer>
+	<script src="blur.js"></script>
+</body>
+</html>
