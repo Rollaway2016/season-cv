@@ -9,7 +9,7 @@ function addPhotos() {
 	var html = [];
 	for ( var s in data){
 		var _html = template.replace('{{index}}', s)
-		.replace('image/placeholder.jpg', 'image/' + data[s].img)
+		.replace('{{img}}', 'image/' + data[s].img)
 		.replace(/{{caption}}/g, data[s].caption)
 		.replace('{{desc}}', data[s].desc);
 		html.push(_html);
@@ -68,7 +68,7 @@ function getRange() {
 			ymax: wrap.clientHeight - photo.clientHeight
 		},
 		right: {
-			xmin: wrap.clientWidth / 2 + 0.5 * photo.clientWidth,
+			xmin: wrap.clientWidth / 2 + .5 * photo.clientWidth,
 			xmax: wrap.clientWidth - photo.clientWidth,
 			ymin: 0,
 			ymax: wrap.clientHeight - photo.clientHeight
