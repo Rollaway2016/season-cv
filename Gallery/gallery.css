@@ -75,6 +75,10 @@ footer .copyright {
 	z-index: 1;
 	width: 150px;
 	height: 220px;
+	left: 50%;
+	top: 50%;
+	margin-top: -110px;
+	margin-left: -75px;
 
 	-webkit-transition: all 1s;
 	-moz-transition: all 1s;

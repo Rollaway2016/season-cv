@@ -63,15 +63,15 @@ function getRange() {
 	var range = {
 		left: {
 			xmin: 0,
-			xmax: wrap.clientWidth / 2 - 1.5 * photo.clientWidth,
+			xmax: wrap.clientWidth / 2 - photo.clientWidth,
 			ymin: 0,
-			ymax: wrap.clientHeight - photo.clientHeight
+			ymax: wrap.clientHeight - 0.5 * photo.clientHeight
 		},
 		right: {
-			xmin: wrap.clientWidth / 2 + 0.5 * photo.clientWidth,
+			xmin: wrap.clientWidth / 2 + photo.clientWidth,
 			xmax: wrap.clientWidth - photo.clientWidth,
 			ymin: 0,
-			ymax: wrap.clientHeight - photo.clientHeight
+			ymax: wrap.clientHeight - 0.5 * photo.clientHeight
 		}
 	};
 	return range;
