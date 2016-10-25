@@ -126,6 +126,36 @@
 				</div>
 			</div>
 		</div>
+		<!-- Columns 三栏布局 -->
+		<div class="myworks">
+			<div class="mytitle">Personal Works（个人作品）</div>
+			<div class="row">
+				<div class="col-md-4" id="img_intro1">
+					<a href="fontIcon.html" alt="Icomoon">
+						<img src="image/icomoon.png" alt="Icomoon" />
+						<div class="intro" id="intro1">
+							<p>Play with CSS3</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4" id="img_intro2">
+					<a href="blurImage/blur.html" alt="Guess Who">
+						<img src="image/blur.png" alt="Guess Who" />
+						<div class="intro" id="intro2">
+							<p>Play with Canvas</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4"  id="img_intro3">
+					<a href="Gallery/gallery.html" alt="Cards Gallery">
+						<img src="image/cards.png" alt="Cards Gallery" />
+						<div class="intro" id="intro3">
+							<p>Play with Cards</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 	<footer>
 		<div class="container">
@@ -161,6 +191,15 @@
 				var tab=$(".nav-tabs a[href='" + href + "']")
 				tab.tab("show");
     			$(document).scrollTop($(href).offset().top - 200);
+			})
+			$("#img_intro1").hover(function () {
+				$("#intro1").slideToggle();
+			})
+			$("#img_intro2").hover(function () {
+				$("#intro2").slideToggle();
+			})
+			$("#img_intro3").hover(function () {
+				$("#intro3").slideToggle();
 			})
 		})
 	</script>

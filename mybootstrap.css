@@ -54,7 +54,6 @@ body {
 }
 
 /*Navtabs*/
-
 .nav-tabs a {
 	font-size: 18px;
 	color: #fff;
@@ -88,6 +87,40 @@ body {
 	padding: 50px;
 	max-width: 400px;
 }
+
+/*Myworks*/
+.myworks {
+	width:100%;
+	margin-top: 50px;
+}
+.myworks .mytitle {
+	margin-bottom: 30px;
+	font-size: 36px;
+	color: #fff;
+	font-family: "Microsoft Yahei", sans-serif;
+}
+.myworks a {
+	text-decoration: none;
+}
+.myworks img {
+	border: 10px solid #222;
+	width: 360px;
+}
+.myworks .intro {
+	display: none;
+	position: relative;
+	width: 360px;
+	height: 120px;
+	margin-top: -120px;
+	padding-top: 30px;
+	font-size: 36px;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	opacity:0.9;
+	filter:alpha(opacity=90);
+}
+
 /*Footer*/
 footer {
 	margin-top: 50px;
