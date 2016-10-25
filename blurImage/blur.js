@@ -14,6 +14,7 @@ var circle = {x: 0, y: 0, r: 500};
 image.onload = function (e) {
 	draw(image, circle);
 };
+
 function randomCircle() {
 	circle = {
 		x: randomInt(radius + 10, canvas.width - radius - 10),
@@ -34,10 +35,9 @@ function draw(image, circle) {
 function getClipArea(circle) {
 	context.beginPath();
 	context.arc(circle.x, circle.y, circle.r, 0, Math.PI * 2, false);
+	context.clip();
 	context.strokeStyle = "#fff";
 	context.lineWidth = 10;
-	context.stroke();
-	context.clip();
 	context.closePath();
 }
 
