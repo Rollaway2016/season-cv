@@ -35,9 +35,10 @@ function draw(image, circle) {
 function getClipArea(circle) {
 	context.beginPath();
 	context.arc(circle.x, circle.y, circle.r, 0, Math.PI * 2, false);
-	context.clip();
 	context.strokeStyle = "#fff";
 	context.lineWidth = 10;
+	context.stroke();
+	context.clip();
 	context.closePath();
 }
 
