@@ -104,12 +104,12 @@ body {
 }
 .myworks img {
 	border: 10px solid #222;
-	width: 300px;
+	width: 320px;
 }
 .myworks .intro {
 	display: none;
 	position: relative;
-	width: 300px;
+	width: 320px;
 	height: 120px;
 	margin-top: -120px;
 	padding-top: 30px;
