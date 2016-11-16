@@ -130,8 +130,8 @@
 		<div class="myworks">
 			<div class="mytitle">Personal Works（其他作品）</div>
 			<div class="row">
-				<div class="col-md-4" id="img_intro1">
-					<a href="fontIcon.html" alt="Icomoon">
+				<div class="col-md-4">
+					<a href="fontIcon.html" alt="Icomoon"  id="img_intro1">
 						<img src="image/icomoon.png" alt="Icomoon" />
 						<div class="intro" id="intro1">
 							<p>Play with CSS3</p>
@@ -139,8 +139,8 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4" id="img_intro2">
-					<a href="blurImage/blur.html" alt="Guess Who">
+				<div class="col-md-4">
+					<a href="blurImage/blur.html" alt="Guess Who" id="img_intro2">
 						<img src="image/blur.png" alt="Guess Who" />
 						<div class="intro" id="intro2">
 							<p>Play with Canvas</p>
@@ -151,8 +151,8 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-4"  id="img_intro3">
-					<a href="Gallery/gallery.html" alt="Cards Gallery">
+				<div class="col-md-4">
+					<a href="Gallery/gallery.html" alt="Cards Gallery" id="img_intro3">
 						<img src="image/cards.png" alt="Cards Gallery" />
 						<div class="intro" id="intro3">
 							<p>Play with Cards</p>
@@ -203,13 +203,13 @@
     			$(document).scrollTop($(href).offset().top - 200);
 			})
 			$("#img_intro1").hover(function () {
-				$("#intro1").slideToggle();
+				$("#intro1").stop(true, false).slideToggle();
 			})
 			$("#img_intro2").hover(function () {
-				$("#intro2").slideToggle();
+				$("#intro2").stop(true, false).slideToggle();
 			})
 			$("#img_intro3").hover(function () {
-				$("#intro3").slideToggle();
+				$("#intro3").stop(true, false).slideToggle();
 			})
 		})
 	</script>
